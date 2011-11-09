@@ -39,6 +39,7 @@
 *
 *
 */
+#include "config.h"
 #include <stdio.h>
 #ifndef _POSIX_SOURCE
 #include <malloc.h>

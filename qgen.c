@@ -453,14 +453,14 @@ int main(int ac, char **av)
             for (i=optind; i < ac; i++)
                 {
                 char qname[10];
-                sprintf(qname, "%d", SEQUENCE(snum, atoi(av[i])));
+                sprintf(qname, "%ld", SEQUENCE(snum, atoi(av[i])));
                 qsub(qname, flags);
                 }
         else
             for (i=1; i <= QUERIES_PER_SET; i++)
                 {
                 char qname[10];
-                sprintf(qname, "%d", SEQUENCE(snum, i));
+                sprintf(qname, "%ld", SEQUENCE(snum, i));
                 qsub(qname, flags);
                 }
     else

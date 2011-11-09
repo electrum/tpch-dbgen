@@ -484,7 +484,7 @@ int dbg_print(int dt, FILE *tgt, void *data, int len, int eol);
    sprintf(tgt, "%02d-%02d-19%02d", mn, dy, yr)
 #else
 #define  PR_DATE(tgt, yr, mn, dy)	\
-sprintf(tgt, "19%02d-%02d-%02d", yr, mn, dy)
+sprintf(tgt, "19%02ld-%02ld-%02ld", yr, mn, dy)
 #endif /* DATE_FORMAT */
 
 /*

@@ -147,6 +147,18 @@
 #define RNG_C	1ull
 #endif /* LINUX */
 
+#ifdef MAC
+#define _POSIX_C_SOURCE 200112L
+#define _POSIX_SOURCE
+#define STDLIB_HAS_GETOPT
+#define SUPPORT_64BITS
+#define DSS_HUGE long
+#define HUGE_FORMAT	"%ld"
+#define HUGE_DATE_FORMAT	"%02ld"
+#define RNG_A	6364136223846793005ull
+#define RNG_C	1ull
+#endif /* MAC */
+
 #ifdef SUN
 #define STDLIB_HAS_GETOPT
 #define RNG_A	6364136223846793005ull
