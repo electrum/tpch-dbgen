@@ -100,7 +100,7 @@
 ################
 ## CHANGE NAME OF ANSI COMPILER HERE
 ################
-CC      = gcc
+CC      ?= gcc
 # Current values for DATABASE are: INFORMIX, DB2, TDAT (Teradata)
 #                                  SQLSERVER, SYBASE, ORACLE
 # Current values for MACHINE are:  ATT, DOS, HP, IBM, ICL, MVS, 
