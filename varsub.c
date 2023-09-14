@@ -298,7 +298,7 @@ varsub(int qnum, int vnum, int flags)
 				lptr = &ccode[0];
 				permute(lptr,25, qnum);
 				for (i=0; i <= 7; i++)
-					sprintf(param[i+1], "%ld", 10 + ccode[i]);
+					sprintf(param[i+1], "%ld", ccode[i]);
 				param[8][0] = '\0';
 				break;
 			case 23:
